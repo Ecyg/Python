@@ -25,6 +25,7 @@ def Base64(value:str)-> str :
     value = codecs.decode(value, "UTF-8")
     return value
 
+#Take in a string, URL encode it
 def URLEncode(value:str)->str:
     value = urllib.parse.quote(value)
     return value
